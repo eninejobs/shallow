@@ -38,6 +38,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'tournament',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django_extensions',
     'qux',
-    'qux.seo',
+    # 'qux.seo',
 ]
 
 MIDDLEWARE = [

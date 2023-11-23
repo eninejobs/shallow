@@ -1,8 +1,8 @@
 from django.views.generic import TemplateView
-from qux.seo.mixin import SEOMixin
+# from qux.seo.mixin import SEOMixin
 
 
-class HomeView(SEOMixin, TemplateView):
+class HomeView(TemplateView):
     template_name = 'home.html'
     extra_context = {
         "roles": [
@@ -71,5 +71,5 @@ class HomeView(SEOMixin, TemplateView):
     }
 
 
-class ApplyView(SEOMixin, TemplateView):
+class ApplyView(TemplateView):
     template_name = 'apply.html'
